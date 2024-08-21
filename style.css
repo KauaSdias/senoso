@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+header {
+    background-color: aliceblue;
+    border-bottom: solid 2px red;
+    display: flex;
+}
+
+header button {
+    border: none;
+    background: none;
+    margin: 5px
+}
+
+header img {
+    height: 5vh;
+    margin: auto;
+    padding: 10px;
+}
+
+#hamburguer {
+    width: 30vh;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#title {
+    margin: 0;
+    display: flex;
+    height: fit-content;
+    border-bottom: solid 1px red;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+#title button {
+    background: none;
+    border: none;
+    height: fit-content;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+content {
+    width: 82.6vh;
+    margin: 5vh;
+    padding: 0;
+}
+
+.btn {
+    align-self: center;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 5vh;
+    margin: 5px;
+    width: 40vh;
+    overflow: hidden;
+    border-left: solid 2px red;
+    box-shadow:  .5rem -.5rem 1rem hsla(0, 0%, 100%, 0.705),
+    .5rem .5rem 1rem hsla(0, 0%, 14%, 0.151);
+   }
+   
+.btn:hover{
+   transform: scale(0.99);
+}
+
+footer {
+    background-color: #b71835;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    margin-top: 26%;
+}
+
+.line {
+    width: 100%;
+    height: 10%;
+    background-color: #e1001f;
+}
+
+.content {
+    height:80%;
+}
+
+.bot {
+    width: 100%;
+    height: 10%;
+    background-color: #e1001f;
+}

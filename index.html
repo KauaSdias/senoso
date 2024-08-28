@@ -14,9 +14,9 @@
         <div class="principal">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvf3sAcxk-PbNbO7BO0u3-aMZYqGxZZhB7hHezLTk1kcXLjFu92t7cV7n2g_u2tVbBEs&usqp=CAU" alt="foto de perfil">
             <div class="info">
-            <p>Gustavo Willian</p>
-            <p>CTADM - A</p>
-            <p>Manhã</p>
+            <p><span>Nome: </span>Gustavo William</p>
+            <p><span>Curso: </span>CTADM - A</p>
+            <p><span>Turno: </span>Manhã</p>
             </div>
         </div> 
             <p>Escola Senai Dr. Celso Charui</p>
@@ -41,11 +41,11 @@
     
     <main>
         <content>
-            <button class="btn">
+            <button class="btn" onclick="modal(0)">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EA3323"><path d="M146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-466.66q0-27 19.83-46.84Q119.67-680 146.67-680H380v-133.33q0-27 19.83-46.84Q419.67-880 446.94-880h66.12q27.27 0 47.11 19.83Q580-840.33 580-813.33V-680h233.33q27 0 46.84 19.83Q880-640.33 880-613.33v466.66q0 27-19.83 46.84Q840.33-80 813.33-80H146.67Zm0-66.67h666.66v-466.66H580v20q0 29.66-19.83 48.16-19.84 18.5-47.11 18.5h-66.12q-27.27 0-47.11-18.5Q380-563.67 380-593.33v-20H146.67v466.66Zm88-98H474V-260q0-17.67-9.17-31.83Q455.67-306 440.67-312q-28-10.33-46.84-14.17Q375-330 356-330q-20.33 0-41.5 4.5T268.67-312q-15.67 6-24.84 20.17-9.16 14.16-9.16 31.83v15.33Zm330.66-64.66H732v-53.34H565.33v53.34ZM356-362.67q23.33 0 39.67-16.33Q412-395.33 412-418.67q0-23.33-16.33-39.66-16.34-16.34-39.67-16.34-23.33 0-39.67 16.34Q300-442 300-418.67q0 23.34 16.33 39.67 16.34 16.33 39.67 16.33Zm209.33-62H732V-478H565.33v53.33ZM446.67-593.33h66.66v-220h-66.66v220ZM480-380Z"/></svg>
                 <p>Carteirinha</p>
             </button>
-            <button class="btn">
+            <button class="btn" onclick="modal(1)">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EA3323"><path d="m40-120 440-760 440 760H40Zm115.33-66.67h649.34L480-746.67l-324.67 560ZM482.78-238q14.22 0 23.72-9.62 9.5-9.61 9.5-23.83 0-14.22-9.62-23.72-9.61-9.5-23.83-9.5-14.22 0-23.72 9.62-9.5 9.62-9.5 23.83 0 14.22 9.62 23.72 9.62 9.5 23.83 9.5Zm-33.45-114H516v-216h-66.67v216ZM480-466.67Z"/></svg>
                 <p>Avisos</p>
             </button>
@@ -90,6 +90,44 @@
         <div class="content"></div>
         <div class="bot"></div>
     </footer>
+
+    <div class="modal" id="carteirinha">
+        <div class="header">
+            <button onclick="fecharModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+            <h2>Carteirinha</h2>
+        </div>
+
+        <div class="carteira" onclick="tocounaCarteira()">
+            <img id="icon_carteirinha" src="https://cdn-icons-png.flaticon.com/512/3413/3413591.png" alt="">
+            
+            <div class="cima"></div>
+            
+                <div class="corpo">
+                    <h3>Nome Irado</h3>
+                    <h2>Unidade</h2>
+                    <h3>128 - DR. Celso Charuri - Guarulhos</h3>
+                    <h2>Nascimento</h2>
+                    <h3>99/99/9999</h3>
+
+                    <img id="codigo" src="image-removebg-preview.png" alt="">
+                </div>
+                    
+            <div class="baixo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png" alt="logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="avisos">
+        <div class="header">
+            <button onclick="fecharModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+            <h2>Avisos</h2>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

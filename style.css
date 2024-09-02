@@ -229,7 +229,7 @@ footer {
 }
 
 .corpo h2 {
-    color: #7171cc;
+    color:#b71835;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 1em;
@@ -277,7 +277,8 @@ footer {
 }
 
 .aviso {
-    background-color: rgb(204, 204, 204);
+    background-color: #b71835;
+    color: #ddd;
     margin-top: 2vh;
     width: 90%;
     padding: 20px;
@@ -288,7 +289,18 @@ footer {
 
 .atv{
    font-weight: bolder;
-   color: rgb(56, 56, 56);
+   color: rgb(63, 63, 63);
+}
+
+.atvd {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    margin-top: 2vh;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
 }
 
 .embx {

@@ -270,14 +270,156 @@ footer {
     height: fit-content;
 }
 
+#listaAvisos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aviso {
+    background-color: rgb(204, 204, 204);
+    margin-top: 2vh;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+.atv{
+   font-weight: bolder;
+   color: rgb(56, 56, 56);
+}
+
+.embx {
+    position: absolute;
+    bottom: 0;
+}
+
+.publi {
+   width: 60vh;
+   height: 5vh;
+   background-color: #e1001f;
+   color: #e6e6e6;
+   text-transform: uppercase;
+   font-weight: bolder;
+
+}
+
+.material {
+    background-color: #b71835;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e6e6e6;
+    border-radius: 1vh; 
+}
 
 
+.header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+.chat-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    height: 85%;
+}
 
+.chat-input {
+    display: flex;
+    height: 5vh;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
 
+.chat-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
+.chat-input button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color:#b71835;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
+.mensagem {
+    background-color: rgb(214, 214, 214);
+    width: fit-content;
+    padding: 2vh;
+    border-radius: 0 20px 20px 20px;
+    margin: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder
+}
 
+.calendar {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background:#b71835;
+    color: white;
+}
+
+.calendar-header button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.calendar-body {
+    padding: 15px;
+}
+
+.calendar-weekdays, .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-weekdays div, .calendar-days div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.calendar-days div {
+    cursor: pointer;
+}
+
+.calendar-days div:hover {
+    background: #f0f0f0;
+}
 
 
 
@@ -287,9 +429,25 @@ footer {
 
 
 #carteirinha {
-    display: block;
+    display: none;
 }
 
 #avisos {
+    display: none;
+}
+
+#atividade {
+    display: none;
+}
+
+#material {
+    display: none;
+}
+
+#chat {
+    display: none;
+}
+
+#calendario {
     display: none;
 }
